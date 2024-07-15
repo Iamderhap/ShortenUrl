@@ -1,0 +1,144 @@
+.section2{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+   gap: 10px;
+   background-color: hsla(257, 8%, 83%, 0.168);
+}
+ .section2-contents{
+    display: flex;
+    gap: 50px;
+}
+.section2-heading-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.section2-heading-text p{
+    width: 25vw;
+ }
+ .recognition{
+    position: relative;
+    top: 10px;
+    background-color: white;
+    line-height: 25px;
+    padding-left: 15px;
+    height: 30vh;
+    border-radius: 10px;
+ }
+ .recognition p{
+    width: 18vw;
+}
+.records{
+    position: relative;
+    top: 40px;
+    padding-left: 15px;
+    background-color: white;
+    line-height: 25px;
+    height: 30vh;
+    border-radius: 10px;
+}
+.records p{
+    width: 20vw;
+}
+.customizable{
+    background-color: white;
+    padding-left: 15px;
+    position: relative;
+    top: 70px;
+    line-height: 25px;
+    height: 30vh;
+    border-radius: 10px;
+}
+.customizable p{
+    width: 20vw;
+}
+.customizable-sub{
+    width: 70%;
+}
+@media screen and (max-width:950px) {
+    .section2{
+        height: 140vh;
+    }
+    .section2-heading-text h3{
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .section2-heading-text p{
+      width: 70vw;
+      line-height: 25px;
+      font-size: 20px;
+    }
+    .section2-contents{
+        flex-direction: column;
+        /* width: 50vw; */
+    }
+    .recognition{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        /* height: 35vh; */
+        
+    }
+    .recognition p{
+        width: 70vw;
+    }
+    .recognition img{
+        background-color: hsl(257, 27%, 26%);
+        border: 20px solid hsl(257, 27%, 26%);
+        border-radius: 50%;
+        position: relative;
+        bottom: 20px;
+        /* width: 15vw; */
+    }
+    .records{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* height: 35vh; */
+        padding-left: 0;
+    }
+    .records p{
+        width: 70vw;
+    }
+    .records img{
+        background-color: hsl(257, 27%, 26%);
+        border: 20px solid hsl(257, 27%, 26%);
+        border-radius: 50%;
+        position: relative;
+        bottom: 20px;
+        /* width: 15vw; */
+    }
+    .customizable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+        /* height: 25vh; */
+    }
+    .customizable p{
+        width: 70vw;
+    }
+    .customizable img{
+        background-color: hsl(257, 27%, 26%);
+        border: 20px solid hsl(257, 27%, 26%);
+        border-radius: 50%;
+        position: relative;
+        bottom: 20px;
+    }
+    .section2-heading-text{
+        padding-bottom: 30px;
+    }
+}
+
+

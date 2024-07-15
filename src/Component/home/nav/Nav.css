@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20%;
+}
+ul{
+    display: flex;
+    gap: 25px;
+}
+li{
+    display: flex;
+    list-style: none;
+    color: hsl(0, 0%, 75%);
+}
+.li{
+    display: block;
+}
+li:hover{
+    color: hsl(257, 27%, 26%);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.nav-image{
+    display: flex;
+    align-items: center;
+}
+.login{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.login p{
+    color: hsl(0, 0%, 75%);
+    cursor: pointer;
+}
+.btn1{
+    display: none;
+    height: 4vh;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    cursor: pointer;
+    color: white;
+}
+.btn1:hover{
+    background-color: hsl(180, 69%, 72%);
+    transition: 0.5s ease-in-out;
+}
+@media screen and (max-width:950px) {
+    .ul{
+    display: none;
+   } 
+   ul{
+    display: none;
+   }
+   .li{
+    display: block;
+    transition: all ease-in-out;
+    animation-duration: 0.5s;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    right: 50%; 
+    /* height: 10vh;  */
+     top: 50px;
+   }
+   .login{
+    display: none;
+   }
+
+   .btn1{
+    display: block;
+   }
+}
