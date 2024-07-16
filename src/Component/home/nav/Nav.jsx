@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Nav.css';
 import logo from "../../../../imagess/logo.svg"
-import { IoMenuSharp } from "react-icons/io5";
+import { FaOutdent } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 function Nav() {
@@ -11,28 +11,31 @@ function Nav() {
   }
   return (
     <>
-         <nav className='container'>
+         <nav className='container max-sm:flex max-sm:gap-[20px]'>
            <div className='nav-image'>
             <div>
               <img className='img-logo' src={logo} alt="logo" />
             </div>
+           <div className='happy'>
            <ul className='ul'>
              <li>Features</li>
              <li>Pricing</li>
              <li>Resources</li>
            </ul>
-           <button onClick={handleToggle} className='btn1'>{menu ? <IoMdClose/> : <IoMenuSharp/>  } </button>
-           </div>
            <div className='login'>
              <p>Login</p>
              <button className='btn1'>Sign Up</button>
            </div> 
+           </div>
+           </div>
+           <button onClick={handleToggle} className='btn1'>{menu ? <IoMdClose/> : <FaOutdent/>  } </button>
+         </nav>
            {menu && (<ul className='li'>
              <li>Features</li>
              <li>Pricing</li>
              <li>Resources</li>
+             <li>Sign Up</li>
            </ul>)}
-         </nav>
     
     </>
   )

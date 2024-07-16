@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20%;
+    gap: 45vw;
 }
+
 ul{
     display: flex;
     gap: 25px;
@@ -14,7 +15,7 @@ li{
     color: hsl(0, 0%, 75%);
 }
 .li{
-    display: block;
+    display: none;
 }
 li:hover{
     color: hsl(257, 27%, 26%);
@@ -33,6 +34,10 @@ li:hover{
 .login p{
     color: hsl(0, 0%, 75%);
     cursor: pointer;
+}
+.happy{
+    display: flex;
+    gap: 50vw;
 }
 .btn1{
     display: none;
@@ -54,22 +59,26 @@ li:hover{
    ul{
     display: none;
    }
-   .li{
-    display: block;
-    transition: all ease-in-out;
-    animation-duration: 0.5s;
-    justify-content: center;
-    list-style: none;
-    position: relative;
-    right: 50%; 
-    /* height: 10vh;  */
-     top: 50px;
-   }
    .login{
     display: none;
    }
-
    .btn1{
-    display: block;
+    display: block; 
+   }
+   ul{
+    list-style: none;
+    color: white;
+   }
+   .li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: aqua;
+    height: 25vh;
+    border-radius: 20px;
+   }
+   li{
+    color: white;
    }
 }

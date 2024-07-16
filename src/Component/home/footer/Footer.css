@@ -74,6 +74,10 @@ footer{
     padding-top: 0px;
 }
 .image-icon{
-    background-color: white;
+    background-color: black;
+    padding: 0px 10px 0px 10px;
+}
+.ul:hover{
+    color: aqua;
 }
 }
